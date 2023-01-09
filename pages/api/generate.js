@@ -6,10 +6,11 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-const basePromptPrefix = "";
+const basePromptPrefix = `For the available ingredients, please tell me a good recipe that I can make.
+Ingredients: `;
 const generateAction = async (req, res) => {
 
-  console.log(`API: ${basePromptPrefix}${req.body.userInput}`);
+  console.log(`API: ${basePromptPrefix}${req.body.userInput}\n`);
 
   const baseCompletion = await openai.createCompletion({
     model: "text-davinci-003",

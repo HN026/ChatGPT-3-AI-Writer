@@ -40,18 +40,17 @@ const Home = () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>ChatGPT-3 | Anime Namer</h1>
+            <h1>ChatGPT-3 | Recipe Giver</h1>
           </div>
           <div className="header-subtitle">
             <h2>
-              Describe your Anime Plot briefly and our App will help you find a
-              name for it.
+              Give us the list of ingredients you've availabe and we will give you an easy and quick recipe.
             </h2>
           </div>
         </div>
         <div className="prompt-container">
           <textarea
-            placeholder="start typing here"
+            placeholder="Ingredients: "
             className="prompt-box"
             value={userInput}
             onChange={onUserChangedText}
