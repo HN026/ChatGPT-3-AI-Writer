@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import buildspaceLogo from "../assets/logo.png";
+// import buildspaceLogo from "../assets/logo.png";
 
 const Home = () => {
   const [userInput, setUserInput] = useState("");
@@ -84,7 +84,7 @@ const Home = () => {
           rel="noreferrer"
         >
           <div className="badge">
-            <Image src={buildspaceLogo} alt="logo" />
+            {/* <Image alt="logo" /> */}
             <p>Build by HN026</p>
           </div>
         </a>
